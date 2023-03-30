@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="left-half">
-      <h2>Portfolio.</h2>
+      <h2><router-link :to="'/'" class="route">Portfolio.</router-link></h2>
     </div>
     <div class="right-half">
       <div>
