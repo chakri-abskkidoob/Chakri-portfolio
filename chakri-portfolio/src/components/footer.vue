@@ -14,7 +14,7 @@ export default{
 <style>
 .footer {
   margin-top: 20px;
-  background-color: #f2f2f2;
+  background-color: #dad9e0;
   padding: 20px;
   display: flex;
   justify-content: space-between;

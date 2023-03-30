@@ -20,11 +20,7 @@
       PROFESSIONAL SUMMARY
     </h5>
     <p style="margin: auto; color: rgb(155, 152, 152); margin-top: 2%">
-      An aspiring Backend developer with specialization in Java. Curious to
-      build user centric websites and applications. Looking forward to work in a
-      challenging and technologically driven environment. Where my skills and
-      abilities are fully utilized and also where I can grow with the growth of
-      the company.
+      I am an experienced backend developer who has worked at Eightfolds Software Technologies. My primary project involved developing an OTT platform named Nammaflix using Java, Spring Boot, and MySQL. As a web development intern, I also gained experience in code base management and implementing changes. My core values include a strong understanding of Java, Spring Boot, MySQL, HTML, CSS, JavaScript, and Vue.js. I am passionate about learning new technologies, working on large projects, and building my own projects. In the next five years, I aim to become the best Java backend developer and achieve a better work-life balance.
     </p>
   </div>
   <div id="main3">
@@ -80,7 +76,7 @@
       </div>
       <br />
       <div id="aumhum">
-        <h4>Web DEvelopment Intern</h4>
+        <h4>Web Development Intern</h4>
         <h3>Aumhum</h3>
         <p>December 2022</p>
         <p>Went through Vue Js code base to understand and fix bugs.</p>
@@ -387,7 +383,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 /* contact me */
 #main9 {
   background-color: rgb(25, 25, 25);

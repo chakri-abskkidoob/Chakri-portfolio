@@ -8,14 +8,16 @@
       <nav>
         <ul>
           <li>
-            <a href="#certification" @mouseover="hoverEffect('certification')" @mouseleave="hoverEffect('')">
-              Certification
-            </a>
+            <router-link :to="'/'">About</router-link>
+          </li>
+          <li>
+            <router-link :to="'/experience'"> Experience</router-link>
           </li>
         </ul>
       </nav>
     </div>
   </header>
+  <router-view></router-view>
 </template>
 
 <script>
