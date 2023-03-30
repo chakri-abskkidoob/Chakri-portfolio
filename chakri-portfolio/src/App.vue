@@ -104,7 +104,7 @@ header {
 }
 
 .right-half {
-  width:50%;
+  width:40%;
   text-align: right;
   display: flex;
   justify-content: space-between;
