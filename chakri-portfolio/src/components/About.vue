@@ -104,42 +104,52 @@ export default {
 }
 
 /* media queries */
-/* For devices with a max width of 768px */
-@media only screen and (max-width: 768px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
   #left-half {
+    margin-bottom: 2rem;
     text-align: left;
   }
 
   #right-half {
-    display: none;
+    max-width: 100%;
+    height: auto;
+    border-radius:50%;
   }
 }
 
-/* For devices with a min width of 769px and a max width of 1024px */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #main {
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #left-half {
-    width: 70%;
+    margin-bottom: 0;
+    text-align: left;
+    padding-right: 2rem;
   }
 
   #right-half {
-    width: 30%;
+    max-width: 50%;
   }
 }
 
-/* For devices with a min width of 1025px */
-@media only screen and (min-width: 1025px) {
-  #left-half {
-    width: 50%;
-  }
-
-  #right-half {
-    width: 50%;
-    display: block;
-  }
-
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
   #main2 {
-    padding: 2%;
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
+
 
 </style>
