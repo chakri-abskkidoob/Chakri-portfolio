@@ -283,6 +283,9 @@ header {
   justify-content: space-between;
 }
 
+/* .left-half .menu-toggle{
+  display : none;
+} */
 .route{
     text-decoration: none;
 }
@@ -333,6 +336,12 @@ header {
 
 
 /* media queries */
+@media screen and (min-width: 1025px) {
+  .left-half .menu-toggle {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
 /* Styles to apply when the viewport width is 768px or less */
 .left-half {
