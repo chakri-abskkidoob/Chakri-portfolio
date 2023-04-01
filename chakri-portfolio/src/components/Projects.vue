@@ -82,6 +82,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default{
     name : 'ProjectsPage'
@@ -100,18 +101,23 @@ export default{
 #main4-project {
   margin: 50px auto;
   max-width: 800px;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 20px; */
+  display: flex;
+    flex-wrap: wrap;
 }
 
 .project {
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   position: relative;
+
+  width: 33.33%;
+  padding: 10px;
 }
 
 .project:hover {
@@ -210,4 +216,32 @@ export default{
   background-color: #3452ff;
   color: #fff;
 }
+
+
+
+/* media queries */
+@media only screen and (max-width: 767px) {
+    /* Mobile view */
+    #main4{
+      border: none;
+    }
+    .project {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Tablet view */
+    .project {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    /* Laptop view */
+    .project {
+      width: 33.33%;
+    }
+  }
+
 </style>

@@ -13,13 +13,13 @@
     <div class="certifications">
       <ul>
         <li>Full stack Web Development
-            <p>lerantlkmlmlmlkmkmklmkmklmkl</p>
+          <p>I have learnt this in Masai School for 6 months starting from scartch</p>
         </li>
         <li>ARC International Internship
-            <p>lerantlkmlmlmlkmkmklmkmklmkl</p>
+          <p>I have learnt this in Masai School for 6 months starting from scartch</p>
         </li>
         <li>Cybersecurity Awareness Training
-            <p>lerantlkmlmlmlkmkmklmkmklmkl</p>
+          <p>I have learnt this in Masai School for 6 months starting from scartch</p>
         </li>
       </ul>
     </div>
@@ -64,4 +64,44 @@ certifications ul {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+li{
+  border-bottom: 1px solid #aba4a4;
+}
+
+/* media queries */
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 767px) {
+  #main6 {
+    padding: 10px;
+    border:none;
+  }
+  .certifications li {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+/* For screens between 768px and 1024px (small laptops and tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #main6 {
+    padding: 20px;
+  }
+  .certifications li {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
+
+/* For screens larger than 1024px (desktops and large laptops) */
+@media (min-width: 1024px) {
+  #main6 {
+    padding: 30px;
+  }
+  .certifications li {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+
 </style>

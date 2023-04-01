@@ -169,4 +169,11 @@ export default {
   font-weight: bold;
   color: #3452ff;
 }
+
+/* media queries */
+@media only screen and (max-width: 767px) {
+  #main8{
+    border:none;
+  }
+}
 </style>

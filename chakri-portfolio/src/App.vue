@@ -363,7 +363,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: #230de6;
+background-color: #8980dbc7;
 color: #fff;
 z-index: 9999;
 transform: translateX(-100%);

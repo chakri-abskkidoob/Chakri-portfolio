@@ -159,4 +159,42 @@ export default {
   font-size: 30px;
   color: #3452ff;
 }
+
+
+/* media queries */
+/* For screens smaller than 768px (i.e. tablets) */
+@media only screen and (max-width: 767px) {
+  #main7{
+    border:none;
+  }
+  .interests ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .interests li {
+    margin-bottom: 20px;
+  }
+}
+
+/* For screens smaller than 576px (i.e. mobile phones) */
+@media only screen and (max-width: 575px) {
+  .interests li {
+    display: flex;
+    flex-direction: column;
+  }
+  .interests li .popup {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 10px;
+    margin-left: 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+  }
+  .interests li .popup p {
+    margin: 0;
+  }
+}
+
 </style>

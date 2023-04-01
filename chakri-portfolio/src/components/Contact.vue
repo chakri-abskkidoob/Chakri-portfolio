@@ -110,4 +110,35 @@ export default {
 .contact-form button:hover {
   background-color: #ff6b6b;
 }
+
+/* media queries */
+@media (max-width: 767px) {
+  #main9{
+    border:none;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .links {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+  }
+}
+
 </style>

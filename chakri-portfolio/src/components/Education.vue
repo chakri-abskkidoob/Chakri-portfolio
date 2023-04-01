@@ -35,13 +35,7 @@
         <p>2017 – 2021</p>
         <p> I am an experienced backend developer who has worked at Eightfolds
       Software Technologies. My primary project involved developing an OTT
-      platform named Nammaflix using Java, Spring Boot, and MySQL. As a web
-      development intern, I also gained experience in code base management and
-      implementing changes. My core values include a strong understanding of
-      Java, Spring Boot, MySQL, HTML, CSS, JavaScript, and Vue.js. I am
-      passionate about learning new technologies, working on large projects, and
-      building my own projects. In the next five years, I aim to become the best
-      Java backend developer and achieve a better work-life balance.</p>
+      platform named Nammaflix using Java, Spring Boot, and MySQL.</p>
       </div>
     </div>
   </div>
@@ -105,4 +99,64 @@ p {
   margin: 10px 0;
   font-size: 13px;
 }
+
+/* media queries */
+/* For screens smaller than 576px */
+@media (max-width: 575.98px) {
+  #main3 {
+    width: 90%;
+    padding: 2%;
+    border: none;
+  }
+  #main3 h5 {
+    font-size: 16px;
+  }
+  #main3-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  #masai,
+  #vishnu {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* For screens larger than or equal to 576px */
+@media (min-width: 576px) {
+  #main3-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #masai,
+  #vishnu {
+    width: 48%;
+  }
+}
+
+/* For screens larger than or equal to 768px */
+@media (min-width: 768px) {
+  #masai,
+  #vishnu {
+    width: 48%;
+  }
+}
+
+/* For screens larger than or equal to 992px */
+@media (min-width: 992px) {
+  #masai,
+  #vishnu {
+    width: 48%;
+  }
+}
+
+/* For screens larger than or equal to 1200px */
+@media (min-width: 1200px) {
+  #masai,
+  #vishnu {
+    width: 48%;
+  }
+}
+
 </style>

@@ -2,8 +2,8 @@
   <div id="main">
     <div id="left-half">
       <h2 style="font-weight: bold; color: white">Hi, I am</h2>
-      <h1 style="color: #3452ff; font-weight: bold">CHAKRAVARTHI</h1>
-      <h1 style="font-weight: bold; color: white">PASUMARTHI</h1>
+      <h1 style="color: #3452ff; font-weight: bold">CHAKRAVARTHI PASUMARTHI</h1>
+      <!-- <h1 style="font-weight: bold; color: white">PASUMARTHI</h1> -->
       <h2 style="color: white; font-family: cursive">Java Backend Developer</h2>
       <br>
       <div class="links">
@@ -21,7 +21,7 @@
       </div>
       </div>
     </div>
-    <div id="right-half"></div>
+      <img id="right-half" src="../assets/chakri2.jpg" alt="">
   </div>
   <div id="main2">
     <h5
@@ -70,7 +70,7 @@ export default {
   border: 2px solid #3452ff;
 }
 #left-half {
-  width: 40%;
+  width: 45%;
   text-align: left;
   padding: 3%;
   /* border-radius: 10% 100%/120%; */
@@ -82,15 +82,14 @@ export default {
   box-shadow: 0px 0px 20px rgba(233, 240, 200, 0.5);
 } */
 #right-half {
-  width: 40%;
+  width: 30%;
   border-radius: 50% 20% / 10% 40%;
   text-align: center;
-  padding: 3%;
   background-color: rgba(0, 0, 0, 0.315);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease-in-out;
-  background-image: url(../assets/chakri2.jpg);
-  background-size: 120%;
+  /* background-image: url(../assets/chakri2.jpg);
+  background-size: 120%; */
 }
 .route{
     text-decoration: none;
@@ -103,4 +102,44 @@ export default {
     font-size: 14px;
     padding:5px;
 }
+
+/* media queries */
+/* For devices with a max width of 768px */
+@media only screen and (max-width: 768px) {
+  #left-half {
+    text-align: left;
+  }
+
+  #right-half {
+    display: none;
+  }
+}
+
+/* For devices with a min width of 769px and a max width of 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #left-half {
+    width: 70%;
+  }
+
+  #right-half {
+    width: 30%;
+  }
+}
+
+/* For devices with a min width of 1025px */
+@media only screen and (min-width: 1025px) {
+  #left-half {
+    width: 50%;
+  }
+
+  #right-half {
+    width: 50%;
+    display: block;
+  }
+
+  #main2 {
+    padding: 2%;
+  }
+}
+
 </style>
