@@ -392,7 +392,7 @@ width: 100%;
 height: 100%;
 background-color: #230de6;
 color: #fff;
-font-size:1.5rem;
+font-size:1.2rem;
 z-index: 9999;
 transform: translateX(-100%);
 transition: transform 0.3s ease-in-out;
