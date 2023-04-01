@@ -273,6 +273,7 @@ header {
 .left-half {
   text-align: left;
   width:50%;
+  display:flex;
 }
 
 .right-half {
@@ -302,14 +303,14 @@ header {
   width: 200px;
   padding: 20px;
   background-color: #1e2b8f;
-  color: #fff;
+  color: #2314ec;
   z-index: 999;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
 }
 
 .sidebar a {
-  color: #fff;
+  color: #8f6868;
   text-decoration: none;
   margin-bottom: 10px;
   display: block;
@@ -328,46 +329,89 @@ header {
   transform: translateX(0%);
 }
 
-@media screen and (min-width: 768px) {
-  .sidebar {
-    width: 300px;
-  }
-  
-  .left-half {
-    width: 33%;
-  }
-  
-  .right-half {
-    width: 67%;
-  }
-  
-  .menu-toggle {
-    display: none;
-  }
+
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+/* Styles to apply when the viewport width is 768px or less */
+.left-half {
+width: 100%;
+text-align: center;
+justify-content: space-between;
+flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 767px) {
-  .left-half {
-    width: 100%;
-  }
-  
-  .right-half {
-    display: none;
-  }
-  
-  .menu-toggle {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .sidebar {
-    width: 100%;
-  }
+.right-half {
+display: none;
 }
+.menu-toggle {
+display: block;
+}
+.sidebar {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #230de6;
+color: #fff;
+z-index: 9999;
+transform: translateX(-100%);
+transition: transform 0.3s ease-in-out;
+}
+.sidebar-active {
+transform: translateX(0);
+}
+.close-sidebar {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 24px;
+cursor: pointer;
+}
+}
+
+@media screen and (max-width: 768px) {
+/* Styles to apply when the viewport width is 768px or less */
+.left-half {
+width: 100%;
+text-align: center;
+}
+.right-half {
+display: none;
+}
+.menu-toggle {
+display: block;
+}
+.sidebar {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #230de6;
+color: #fff;
+font-size:1.5rem;
+z-index: 9999;
+transform: translateX(-100%);
+transition: transform 0.3s ease-in-out;
+}
+.sidebar-active {
+transform: translateX(0);
+}
+.close-sidebar {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 24px;
+cursor: pointer;
+}
+.sidebar div:hover {
+  background-color: #3452ff;
+  color: #fff;
+}
+}
+
 </style>
 
