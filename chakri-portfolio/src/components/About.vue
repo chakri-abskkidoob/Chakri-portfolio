@@ -5,7 +5,7 @@
       <h1 style="color: #3452ff; font-weight: bold">CHAKRAVARTHI PASUMARTHI</h1>
       <!-- <h1 style="font-weight: bold; color: white">PASUMARTHI</h1> -->
       <h2 style="color: white; font-family: cursive">Java Backend Developer</h2>
-      <br>
+      <br />
       <div class="links">
         <a href="https://www.linkedin.com/in/chakravarthi-pasumarthi-84b209219/"
           ><i class="fab fa-linkedin" style="color: #fff"></i
@@ -17,11 +17,11 @@
           ><i class="far fa-file-alt" style="color: #fff"></i
         ></a>
         <div>
-        <router-link :to="'/contact'" class="route">Contact Me</router-link>
-      </div>
+          <router-link :to="'/contact'" class="route">Contact Me</router-link>
+        </div>
       </div>
     </div>
-      <img id="right-half" src="../assets/chakri2.jpg" alt="">
+    <img id="right-half" src="../assets/chakri2.jpg" alt="" />
   </div>
   <div id="main2">
     <h5
@@ -35,15 +35,12 @@
       PROFESSIONAL SUMMARY
     </h5>
     <p style="margin: auto; color: rgb(155, 152, 152); margin-top: 2%">
-      I am an experienced backend developer who has worked at Eightfolds
-      Software Technologies. My primary project involved developing an OTT
-      platform named Nammaflix using Java, Spring Boot, and MySQL. As a web
-      development intern, I also gained experience in code base management and
-      implementing changes. My core values include a strong understanding of
-      Java, Spring Boot, MySQL, HTML, CSS, JavaScript, and Vue.js. I am
-      passionate about learning new technologies, working on large projects, and
-      building my own projects. In the next five years, I aim to become the best
-      Java backend developer and achieve a better work-life balance.
+      Experienced backend developer at Eightfolds Software Technologies with
+      expertise in Java, Spring Boot, MySQL, HTML, CSS, JavaScript, and Vue.js.
+      Developed an OTT platform named Nammaflix and gained experience in code
+      base management. Passionate about learning new technologies and building
+      projects. Goal-oriented and striving to become the best Java backend
+      developer while achieving a better work-life balance.
     </p>
   </div>
 </template>
@@ -91,16 +88,16 @@ export default {
   /* background-image: url(../assets/chakri2.jpg);
   background-size: 120%; */
 }
-.route{
-    text-decoration: none;
+.route {
+  text-decoration: none;
 }
-.route :hover{
-    background-color: rgba(39, 39, 103, 0.605);
-    color:white;
-    /* box-shadow: 0 0px 10px hsl(193, 92%, 10%); */
-    border-radius:5px;
-    font-size: 14px;
-    padding:5px;
+.route :hover {
+  background-color: rgba(39, 39, 103, 0.605);
+  color: white;
+  /* box-shadow: 0 0px 10px hsl(193, 92%, 10%); */
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px;
 }
 
 /* media queries */
@@ -121,7 +118,7 @@ export default {
   #right-half {
     max-width: 100%;
     height: auto;
-    border-radius:50%;
+    border-radius: 50%;
   }
 }
 
@@ -150,6 +147,4 @@ export default {
     margin: 0 auto;
   }
 }
-
-
 </style>

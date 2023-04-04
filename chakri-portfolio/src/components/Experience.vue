@@ -107,19 +107,70 @@ export default{
         <h4>Java Backend Developer</h4>
         <h3>Eightfolds Software Technologies</h3>
         <p>September 2022 – November 2022</p>
-        <p>
+        <!-- <p>
           Built few Api’s for nammaflix application using SpringBoot framework
           and Mysql database for practice and implemented successfully. Learned
           Javascript framework which is Vue Js and non-relational document
           database MongoDB.
-        </p>
+        </p> -->
+        <!-- <ul>
+          <li>
+            Developed APIs for Nammaflix using SpringBoot and MySQL database.</li>
+          <li>Practiced and implemented APIs successfully.</li>
+          <li>Gained knowledge of Vue.js and MongoDB.</li>
+          <li>Learned to work with non-relational document databases.</li>
+          <li>Worked on building backend infrastructure for OTT platform</li>
+        </ul> -->
+        <div class="div">
+          <ul class="ul">
+            <li class="li">
+              <i class="fas fa-code"></i>Developed APIs for Nammaflix using
+              SpringBoot and MySQL database.
+            </li>
+            <li class="li">
+              <i class="fas fa-check"></i> Practiced and implemented APIs
+              successfully.
+            </li>
+            <li class="li">
+              <i class="fas fa-book"></i> Gained knowledge of Vue.js and
+              MongoDB.
+            </li>
+            <li class="li">
+              <i class="fas fa-lightbulb"></i> Learned to work with
+              non-relational document databases.
+            </li>
+            <li class="li">
+              <i class="fas fa-cogs"></i> Worked on building backend
+              infrastructure for OTT platform.
+            </li>
+          </ul>
+        </div>
       </div>
       <br />
       <div id="aumhum">
         <h4>Web Development Intern</h4>
         <h3>Aumhum</h3>
         <p>December 2022</p>
-        <p>Went through Vue Js code base to understand and fix bugs.</p>
+        <div class="div">
+          <ul class="ul">
+            <li class="li">
+              <i class="fas fa-search"></i> Analyzed Vue.js code base to gain
+              understanding of code.
+            </li>
+            <li class="li">
+              <i class="fas fa-tasks"></i> Implemented admin pages and made them
+              functional.
+            </li>
+            <li class="li">
+              <i class="fas fa-cogs"></i> Enhanced admin pages by integrating
+              two different APIs for improved functionality.
+            </li>
+            <li class="li">
+              <i class="fas fa-tools"></i> Contributed to development of dynamic
+              and useful admin pages for future use.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -178,6 +229,54 @@ export default {
   margin-bottom: 10px;
   color: #edecf3ec;
 }
+
+/* list */
+/* Style for the unordered list */
+.ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for the list items */
+.li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+}
+
+/* Style for the font awesome icons */
+.fa {
+  margin-right: 5px;
+}
+
+/* Style for the devicons */
+.devicon {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* Style for the colored devicons */
+.colored {
+  fill: #007acc;
+}
+
+/* Style for the container div */
+.div {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.li {
+  margin-bottom: 10px;
+}
+
+.li i {
+  margin-right: 10px;
+}
+
 
 /* Media Queries */
 

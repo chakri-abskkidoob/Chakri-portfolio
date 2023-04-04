@@ -17,7 +17,7 @@
           <div class="popup">
             <p>
               I enjoy playing and watching a variety of sports, including
-              soccer, basketball, and tennis.
+              cricket, vollleyball, and tennis.
             </p>
           </div>
         </li>

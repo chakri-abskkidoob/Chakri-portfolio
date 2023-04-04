@@ -17,40 +17,80 @@
         </h4>
         <h3>Masai School</h3>
         <p>November 2021 – June 2022</p>
-        <p> I am an experienced backend developer who has worked at Eightfolds
-      Software Technologies. My primary project involved developing an OTT
-      platform named Nammaflix using Java, Spring Boot, and MySQL. As a web
-      development intern, I also gained experience in code base management and
-      implementing changes. My core values include a strong understanding of
-      Java, Spring Boot, MySQL, HTML, CSS, JavaScript, and Vue.js. I am
-      passionate about learning new technologies, working on large projects, and
-      building my own projects. In the next five years, I aim to become the best
-      Java backend developer and achieve a better work-life balance.</p>
+        <!-- <div class="div">
+          <ul class="ul">
+            
+          </ul>
+        </div> -->
+        <div>
+          <ul class="ul">
+            <li class="li">
+              <i class="fas fa-graduation-cap"></i> Masai School - First three
+              months - learnt HTML, CSS, JavaScript, Data Structures, Algorithms
+            </li>
+            <li class="li">
+              <i class="fas fa-code"></i> 2 projects: Clone of BeautyBebo,
+              Beardo.in
+            </li>
+            <li class="li">
+              <i class="fas fa-graduation-cap"></i> Joined Java backend course -
+              Learnt Java, Spring Boot, MySQL
+            </li>
+            <li class="li">
+              <i class="fas fa-shopping-cart"></i> Developed online shopping
+              application for backend using Java, Spring Boot, MySQL
+            </li>
+          </ul>
+        </div>
       </div>
       <div id="vishnu">
         <h4 style="border-bottom: 2px solid white; width: 100%">
           Bachelor Of Technology (ECE)
         </h4>
         <h3>Vishnu Institute of Technology</h3>
-        <p>2017 – 2021</p>
-        <p> I am an experienced backend developer who has worked at Eightfolds
-      Software Technologies. My primary project involved developing an OTT
-      platform named Nammaflix using Java, Spring Boot, and MySQL.</p>
+        <p>June 2017 – June 2021</p>
+        <div>
+          <ul class="ul">
+            <li class="li"><i class="fas fa-microchip"></i> Studied VLSI.</li>
+            <li class="li">
+              <i class="fas fa-ruler-horizontal"></i> Learned about Linear and
+              Digital IC applications.
+            </li>
+            <li class="li">
+              <i class="fas fa-microchip"></i> Gained knowledge on
+              Microprocessors and Microcontrollers.
+            </li>
+            <li class="li">
+              <i class="fas fa-signal"></i> Studied Signals and Systems.
+            </li>
+            <li class="li">
+              <i class="fas fa-digital-tachograph"></i> Learned about Digital
+              Signal Processor.
+            </li>
+            <li class="li">
+              <i class="fas fa-wave-square"></i> Gained knowledge on Wave
+              Propagation.
+            </li>
+            <li class="li">
+              <i class="fas fa-cogs"></i> Studied Control Systems.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-export default{
-    name : 'EducationPage'
-}
+export default {
+  name: "EducationPage",
+};
 </script>
 
 <style scoped>
-template{
-    width : 100%;
-    height: 100%;
-    background-color: red;
+template {
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
 #main3 {
   /* background-color: rgb(25, 25, 25); */
@@ -62,8 +102,8 @@ template{
   border: 2px solid #3452ff;
 }
 #main3-inner {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   align-items: center;
   margin: 50px auto;
   max-width: 800px;
@@ -125,13 +165,14 @@ p {
 /* For screens larger than or equal to 576px */
 @media (min-width: 576px) {
   #main3-inner {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: flex-start;
   }
   #masai,
   #vishnu {
-    width: 48%;
+    width: 100%;
+    margin: 5%;
   }
 }
 
@@ -139,7 +180,8 @@ p {
 @media (min-width: 768px) {
   #masai,
   #vishnu {
-    width: 48%;
+    width: 100%;
+    margin: 5%;
   }
 }
 
@@ -147,7 +189,8 @@ p {
 @media (min-width: 992px) {
   #masai,
   #vishnu {
-    width: 48%;
+    width: 100;
+    margin: 5%;
   }
 }
 
@@ -155,8 +198,8 @@ p {
 @media (min-width: 1200px) {
   #masai,
   #vishnu {
-    width: 48%;
+    width: 100%;
+    margin: 5%;
   }
 }
-
 </style>

@@ -1,5 +1,5 @@
 <template>
-     <div id="main6">
+  <div id="main6">
     <h5
       style="
         margin: auto;
@@ -8,27 +8,39 @@
         border-bottom: 2px solid rgb(155, 152, 152);
       "
     >
-      CERTIFICATIONS
+      CERTIFICATIONS & ACHIEVEMENTS
     </h5>
     <div class="certifications">
-      <ul>
-        <li>Full stack Web Development
-          <p>I have learnt this in Masai School for 6 months starting from scartch</p>
-        </li>
-        <li>ARC International Internship
-          <p>I have learnt this in Masai School for 6 months starting from scartch</p>
-        </li>
-        <li>Cybersecurity Awareness Training
-          <p>I have learnt this in Masai School for 6 months starting from scartch</p>
-        </li>
-      </ul>
+      <div class="div">
+        <ul class="ul">
+          <li class="li">
+            <i class="fas fa-laptop-code"></i> Full Stack Web Development -
+            Learned HTML, CSS, JavaScript, Java, SpringBoot, MySQL, DSA.
+          </li>
+          <li class="li">
+            <i class="fas fa-robot"></i> ARC International Internship -
+            Experienced robots to increase production efficiency.
+          </li>
+          <li class="li">
+            <i class="fas fa-shield-alt"></i> Cybersecurity Awareness Training -
+            Learnt about preventing hacking in digital systems.
+          </li>
+          <li class="li">
+            <i class="fab fa-java"></i> Java - Gold Level - Earned 553 points.
+          </li>
+          <li class="li">
+            <i class="fas fa-database"></i> SQL - Gold Level - Earned 960
+            points.
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-    name : "CertificationsPage",
-}
+  name: "CertificationsPage",
+};
 </script>
 <style>
 #main6 {
@@ -64,7 +76,7 @@ certifications ul {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-li{
+li {
   border-bottom: 1px solid #aba4a4;
 }
 
@@ -73,7 +85,7 @@ li{
 @media (max-width: 767px) {
   #main6 {
     padding: 10px;
-    border:none;
+    border: none;
   }
   .certifications li {
     font-size: 16px;
@@ -102,6 +114,4 @@ li{
     line-height: 1.4;
   }
 }
-
-
 </style>
