@@ -1,5 +1,5 @@
-<template>
-      <div id="main4">
+<!-- <template>
+  <div id="main4">
     <h5
       style="
         margin: auto;
@@ -11,83 +11,66 @@
       PROJECTS
     </h5>
     <div id="main4-project">
-      <div class="project">
-        <img
-          src="https://live.api.app.nammaflix.in/nammaflix/file/MEDIA-c54560d5d5834b14a56cce767a354f35"
-          style="width: 100%; height: 100%"
-          alt="Project 1"
-        />
-        <div class="overlay">
-          <!-- <h3>Clone of Nammaflix</h3> -->
-          <!-- <p>An OTT platform which is widely used in Karnataka. From this platform you can watch movies, series, daily serials and you can also listen to motivational speech. It is provided with subscription plans which users have to purchase the plan according to them.</p> -->
-          <a href="#">Nammaflix</a>
-        </div>
-      </div>
-      <div class="project">
-        <img
-          src="https://img.freepik.com/premium-vector/mobile-smartphone-with-food-delivery-app-order-food-online-modern-creative-data-graphic-design-application-flat-style-cartoon-illustration-vector_610956-200.jpg"
-          alt="Project 2"
-        />
-        <div class="overlay">
-          <!-- <h3>Project 2</h3>
-      <p>Description of project 2.</p> -->
-          <a href="#">Food Delivery Services</a>
-        </div>
-      </div>
-      <div class="project">
-        <img
-          src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8teWFzaC13ZWJzaXRlLWJhbm5lci0xMDgwLXgtMTA4MC0zODc0OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0="
-          alt="Project 3"
-        />
-        <div class="overlay">
-          <!-- <h3>Project 3</h3>
-      <p>Description of project 3.</p> -->
-          <a href="#">Beardo.in</a>
-        </div>
-      </div>
-      <div class="project">
-        <img
-          src="https://live.api.app.nammaflix.in/nammaflix/file/MEDIA-c54560d5d5834b14a56cce767a354f35"
-          style="width: 100%; height: 100%"
-          alt="Project 1"
-        />
-        <div class="overlay">
-          <!-- <h3>Clone of Nammaflix</h3> -->
-          <!-- <p>An OTT platform which is widely used in Karnataka. From this platform you can watch movies, series, daily serials and you can also listen to motivational speech. It is provided with subscription plans which users have to purchase the plan according to them.</p> -->
-          <a href="#">Nammaflix</a>
-        </div>
-      </div><div class="project">
-        <img
-          src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8teWFzaC13ZWJzaXRlLWJhbm5lci0xMDgwLXgtMTA4MC0zODc0OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0="
-          style="width: 100%; height: 100%"
-          alt="Project 1"
-        />
-        <div class="overlay">
-          <!-- <h3>Clone of Nammaflix</h3> -->
-          <!-- <p>An OTT platform which is widely used in Karnataka. From this platform you can watch movies, series, daily serials and you can also listen to motivational speech. It is provided with subscription plans which users have to purchase the plan according to them.</p> -->
-          <a href="#">Nammaflix</a>
-        </div>
-      </div><div class="project">
-        <img
-          src="https://live.api.app.nammaflix.in/nammaflix/file/MEDIA-c54560d5d5834b14a56cce767a354f35"
-          style="width: 100%; height: 100%"
-          alt="Project 1"
-        />
-        <div class="overlay">
-          <!-- <h3>Clone of Nammaflix</h3> -->
-          <!-- <p>An OTT platform which is widely used in Karnataka. From this platform you can watch movies, series, daily serials and you can also listen to motivational speech. It is provided with subscription plans which users have to purchase the plan according to them.</p> -->
-          <a href="#">Nammaflix</a>
-        </div>
-      </div>
+      <ul>
+        <li v-for="project in projects" :key="project.projectId">
+          <div class="project">
+            <img
+              :src="project.projectImage"
+              style="width: 100%; height: 100%"
+              alt=""
+            />
+            <div class="overlay">
+              <a href="#">{{ project.projectName }}</a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
-export default{
-    name : 'ProjectsPage'
-}
+export default {
+  name: "ProjectsPage",
+  data() {
+    return {
+      projects: [
+        {
+          projectId: 1,
+          projectName: "Nammaflix",
+          projectImage: "../assets/chakri2.jpg",
+        },
+        {
+          projectId: 2,
+          projectName: "Portfolio",
+          projectImage: "../assets/chakri2.jpg",
+        },
+        {
+          projectId: 3,
+          projectName: "Online Shopping",
+          projectImage: "../assets/chakri2.jpg",
+        },
+        {
+          projectId: 4,
+          projectName: "Zomata",
+          projectImage: "../assets/chakri2.jpg",
+        },
+        {
+          projectId: 5,
+          projectName: "Beardo.in",
+          projectImage: "../assets/chakri2.jpg",
+        },
+        {
+          projectId: 6,
+          projectName: "BeautyBebo",
+          projectImage: "../assets/chakri2.jpg",
+        },
+      ],
+    };
+  },
+};
 </script>
+
 <style>
 #main4 {
   background-color: rgb(25, 25, 25);
@@ -101,21 +84,16 @@ export default{
 #main4-project {
   margin: 50px auto;
   max-width: 800px;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; */
   display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .project {
-  /* background-color: #fff; */
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   position: relative;
-
   width: 33.33%;
   padding: 10px;
 }
@@ -128,47 +106,6 @@ export default{
   width: 100%;
   height: 200px;
   object-fit: cover;
-}
-
-.project h3 {
-  margin: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #3452ff;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.project:hover h3 {
-  opacity: 1;
-}
-
-.project p {
-  margin: 10px;
-  font-size: 16px;
-  color: #888;
-  text-align: center;
-}
-
-.project a {
-  display: block;
-  margin: 10px;
-  padding: 10px;
-  background-color: #3452ff;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.project a:hover {
-  background-color: #ff6b6b;
 }
 
 .overlay {
@@ -190,19 +127,6 @@ export default{
   opacity: 1;
 }
 
-.overlay h3 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.overlay p {
-  font-size: 18px;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
 .overlay a {
   background-color: #fff;
   color: #3452ff;
@@ -217,31 +141,265 @@ export default{
   color: #fff;
 }
 
+.overlay-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+z-index: 2;
+}
 
+.overlay-content h2 {
+font-size: 2.5rem;
+margin-bottom: 2rem;
+}
 
-/* media queries */
-@media only screen and (max-width: 767px) {
-    /* Mobile view */
-    #main4{
-      border: none;
-    }
-    .project {
-      width: 100%;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* Tablet view */
-    .project {
-      width: 50%;
-    }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    /* Laptop view */
-    .project {
-      width: 33.33%;
-    }
-  }
+.overlay-content p {
+font-size: 1.25rem;
+margin-bottom: 2rem;
+}
 
+.overlay-content a {
+display: inline-block;
+background-color: #3452ff;
+color: #fff;
+padding: 1rem 2rem;
+border-radius: 2rem;
+transition: background-color 0.3s ease;
+}
+
+.overlay-content a:hover {
+background-color: #fff;
+color: #3452ff;
+}
+
+/* Styles for the close button */
+.overlay-close {
+position: absolute;
+top: 2rem;
+right: 2rem;
+font-size: 2rem;
+font-weight: bold;
+color: #3452ff;
+cursor: pointer;
+}
+
+.overlay-close:hover {
+color: #fff;
+}
+
+</style> -->
+
+<template>
+  <div class="projects-page">
+    <h2 class="projects-title">PROJECTS</h2>
+    <div class="projects-container">
+      <div
+        v-for="project in projects"
+        :key="project.projectId"
+        class="project-card"
+      >
+        <div class="project-image">
+          <img :src="project.projectImage" alt="Project Image" />
+        </div>
+        <div class="project-details">
+          <h3 class="project-name">{{ project.projectName }}</h3>
+          <p>Tech Stack : {{ project.projectTechStack }}</p>
+          <p class="project-description">{{ project.projectDescription }}</p>
+          <!-- <a :href="project.projectLink" target="_blank" class="project-link"
+            >View Project</a
+          > -->
+
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <a :href="project.projectLink" target="_blank" class="project-link">
+              <i class="fas fa-eye"></i> View Project
+            </a>
+            <a
+              v-if="project.projectDeploy"
+              :href="project.projectDeploy"
+              target="_blank"
+              class="project-link"
+            >
+              <i class="fas fa-rocket"></i> Deploy Link
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "ProjectsPage",
+  data() {
+    return {
+      projects: [
+        {
+          projectId: 1,
+          projectName: "Nammaflix",
+          projectImage:
+            "https://www.contus.com/blog/wp-content/uploads/2022/03/banner-image-41.4-01-1000x491.png",
+          projectTechStack: "Java | SpringBoot | MySql | Vue Js | BootStrap",
+          projectDescription:
+            "A movie streaming website built with Java, springboot mysql, vue js where user can find kannada movies, daily serials, motivational videos.",
+          projectLink:
+            "https://github.com/chakri-abskkidoob/Complete-nammaflix",
+        },
+        {
+          projectId: 2,
+          projectName: "Portfolio",
+          projectImage:
+            "https://thumbs.dreamstime.com/blog/2018/11/essential-tips-organizing-your-portfolio-29167-image42264873.jpg",
+          projectTechStack: "Vue js",
+          projectDescription:
+            "My personal portfolio website built with Vue.js.",
+          projectLink: "https://github.com/chakri-abskkidoob/Chakri-portfolio",
+          projectDeploy: "https://chakravarthiportfolio.netlify.app/#/",
+        },
+        {
+          projectId: 3,
+          projectName: "Online Shopping",
+          projectImage:
+            "https://www.addictioncenter.com/app/uploads/2020/01/online_shopping_addiction-scaled.jpeg",
+          projectTechStack: "Java | SpringBoot | Mysql",
+          projectDescription:
+            "An online shopping website built with Java, springboot, mysql.",
+          projectLink:
+            "https://github.com/akshaydwankar3/ONLINE-SHOPPING-APPLICATION-PROJECT-IN-JAVA",
+        },
+        {
+          projectId: 4,
+          projectName: "Online Food delivery",
+          projectImage:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPlXnQI99IPJZ6dsfofvu-3QH7JUyBt18BlA&usqp=CAU",
+          projectTechStack: "Java | SpringBoot | MySql",
+          projectDescription:
+            "A food delivery website built with Java, springboot, mysql.",
+          projectLink:
+            "https://github.com/chakri-abskkidoob/Food-delivery-services",
+        },
+        {
+          projectId: 5,
+          projectName: "Beardo.in",
+          projectImage:
+            "https://mediabrief.com/wp-content/uploads/2021/12/IMAGE-beardo-rolls-our-new-campaign-with-yash-MEDIABRIEF.jpg",
+          projectTechStack: "HTML | CSS | Javascript",
+          projectDescription:
+            "An e-commerce website for men's grooming products built by HTML, CSS, Javascript",
+          projectLink: "https://github.com/leadernaga/Beardo.in",
+          projectDeploy: "https://beardoclone.netlify.app/",
+        },
+        {
+          projectId: 6,
+          projectName: "BeautyBebo",
+          projectImage:
+            "https://i.pinimg.com/736x/23/6d/a1/236da1871956602c6d43b66fbb9bff4f.jpg",
+          projectTechStack: "HTML | CSS Javascript",
+          projectDescription:
+            "An e-commerce website for beauty products built by HTML, CSS< javascript",
+          projectLink: "https://github.com/Kalken12/CloneBeautyBebo",
+        },
+      ],
+    };
+  },
+};
+</script>
+
+<style>
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.projects-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3452ff;
+  margin-bottom: 2rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  max-width: 1200px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image img {
+  /* max-width: 100%; */
+  width: 100%;
+  height: 250px;
+}
+
+.project-details {
+  padding: 1.5rem;
+}
+
+.project-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  display: inline-block;
+  background-color: #3452ff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-link:hover {
+  background-color: #1e2be6;
+}
+
+@media screen and (max-width: 767px) {
+  /* mobile view */
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* tablet view */
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+  }
+}
 </style>
