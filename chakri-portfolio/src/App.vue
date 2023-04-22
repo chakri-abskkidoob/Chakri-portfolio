@@ -262,7 +262,7 @@ export default {
 }
 
 header {
-  background-color: #03032c;
+  /* background-color: #03032c; */
   color:#3452ff;
   padding: 10px;
   display: flex;

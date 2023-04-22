@@ -102,7 +102,7 @@ export default {
 
 /* media queries */
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 400px) {
+@media (max-width: 768px) {
   #main {
     display: flex;
     flex-direction: column-reverse;

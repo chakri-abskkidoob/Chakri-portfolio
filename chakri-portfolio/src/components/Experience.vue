@@ -225,7 +225,6 @@ export default {
 #eightfolds p,
 #aumhum p {
   font-size: 16px;
-  line-height: 1.5;
   margin-bottom: 10px;
   color: #edecf3ec;
 }
@@ -308,7 +307,6 @@ export default {
   #eightfolds p,
   #aumhum p {
     font-size: 14px;
-    line-height: 1.3;
   }
 }
 </style>

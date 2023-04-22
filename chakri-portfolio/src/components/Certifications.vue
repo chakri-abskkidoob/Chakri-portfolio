@@ -89,7 +89,6 @@ li {
   }
   .certifications li {
     font-size: 16px;
-    line-height: 1.2;
   }
 }
 
@@ -100,7 +99,6 @@ li {
   }
   .certifications li {
     font-size: 18px;
-    line-height: 1.3;
   }
 }
 
@@ -111,7 +109,6 @@ li {
   }
   .certifications li {
     font-size: 20px;
-    line-height: 1.4;
   }
 }
 </style>
